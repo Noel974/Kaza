@@ -1,0 +1,49 @@
+@import "../../Base/_Variable.scss";
+@import "../../Base/_mixinis.scss";
+
+.page_404 {
+  margin: auto;
+  width: 80%; // Ajustez la largeur pour un meilleur rendu sur des écrans plus petits
+  max-width: 600px; // Ajoutez une largeur maximale pour éviter des étirements excessifs
+  padding: 30px; // Réduisez la marge intérieure pour un meilleur ajustement
+  color: $color-secondary;
+
+  @media screen and (max-width: 768px) {
+    width: 90%; // Ajustez la largeur pour des écrans plus petits
+  }
+}
+
+.notFound_info {
+  @include flex(column, center, center);
+  min-height: calc(100vh - 100px); // Ajustez la hauteur minimale
+}
+
+.notFound_infos_title {
+  font-weight: 700;
+  font-size: 288px; 
+
+  @media screen and (max-width: 768px) {
+    font-size: 140px; // Ajustez la taille pour des écrans plus petits
+  }
+}
+
+.notFound_infos_content {
+  font-weight: 500;
+  font-size: clamp(1.5rem, 3vw, 2.5rem); // Utilisez clamp() pour une meilleure responsivité
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.8rem; 
+  }
+}
+
+.notFound_infos_return {
+  display: block;
+  text-align: center;
+  font-weight: 500;
+  font-size: clamp(0.8rem, 1.5vw, 1rem); 
+
+  @media screen and (max-width: 768px) {
+    font-size: 1rem; 
+  }
+}

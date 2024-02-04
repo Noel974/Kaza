@@ -1,0 +1,45 @@
+@import "../../Base/_Variable.scss";
+@import "../../Base/_mixinis.scss";
+.footer{
+    @include flex(column);
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 209px;
+    background-color: #000;
+}
+.logofooter{
+    max-width: 100%
+}
+.copyright{
+    color: $color-primary;
+    margin: 30px;
+    
+}
+@media screen and (max-width: 320px) {
+    .footer {
+        justify-content: center;
+        height: 290px;
+    }
+    .logofooter {
+        margin-top: 0;
+        width: 122px;
+        height: 40px;
+    }
+   .copyright {
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        .copyright-year {
+            margin-bottom: 5px; 
+            justify-content: center;
+        }
+        
+        .copyright-rights {
+            margin-top: 5px;
+            justify-content: center;
+        }
+}}
