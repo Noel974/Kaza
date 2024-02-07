@@ -3,13 +3,11 @@ import about from '../assets/media/about.png';
 import arrow from '../assets/logo/arrow.png';
 import Banner from '../Components/Banner/Banner';
 
-
-
-function Infopanel({ title, content }) {
+function InfopanelApropos({ title, content }) {
   console.log("Toggle clicked")
   const [toggle, setToggle] = useState(false);
   return (
-    <div className="infopanel">
+    <div className="infopanel-apropos">
       <h3 className={`info-panel_title ${toggle ? 'arrow_up' : 'arrow_down'}`} onClick={() => setToggle(!toggle)}>
         {title}
         <img className={`arrow_icon ${toggle ? 'arrow_up' : 'arrow_down'}`} src={arrow} alt="Arrow" />
@@ -54,7 +52,7 @@ function AboutPage() {
       <main className='about_main'>
           {aboutDatas.map(data => (
             <div key={data.id} className="about_main_info-panel">
-              <Infopanel title={data.title} content={data.content} />
+              <InfopanelApropos title={data.title} content={data.content} />
             </div>
           ))}
         </main>

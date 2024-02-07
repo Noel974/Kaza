@@ -84,11 +84,14 @@
 .Logment_infopanel{
     display: flex;
     justify-content: space-between;
-    gap: 70px;
-    margin: 30px auto;
-    width: 95%;
+gap: 80px;
+margin-top: 15px;
+margin-left: 20px;
+margin-right: 20px;
+    
     &_item{
-        width: 50%;
+        width: 100%;
+        padding: 0;
     }
     @media screen and (max-width: 650px){
         flex-direction: column;

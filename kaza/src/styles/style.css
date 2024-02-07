@@ -290,19 +290,15 @@
   padding: 10px 15px;
   cursor: pointer;
 }
-.info-panel_title .arrow {
+.info-panel_title .arrow_icon {
   transition: all 0.2s ease-in-out;
-}
-@media screen and (max-width: 1230px) {
-  .info-panel_title .arrow {
-    width: 12px;
-  }
-}
-.info-panel_title .arrow_up {
   transform: rotate(0deg);
 }
-.info-panel_title .arrow_down {
+.info-panel_title .arrow_up {
   transform: rotate(180deg);
+}
+.info-panel_title .arrow_down {
+  transform: rotate(0deg);
 }
 
 .info-panel_content {
@@ -459,12 +455,14 @@
 .Logment_infopanel {
   display: flex;
   justify-content: space-between;
-  gap: 70px;
-  margin: 30px auto;
-  width: 95%;
+  gap: 80px;
+  margin-top: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .Logment_infopanel_item {
-  width: 50%;
+  width: 100%;
+  padding: 0;
 }
 @media screen and (max-width: 650px) {
   .Logment_infopanel {

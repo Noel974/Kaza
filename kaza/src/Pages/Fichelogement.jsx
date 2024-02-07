@@ -10,23 +10,23 @@ import arrow from '../assets/logo/arrow.png';
 import redStar from '../assets/logo/red_star.png';
 import greyStar from '../assets/logo/grey_star.png';
 
-function Infopanel({ title, content }) {
-  const [toggle, setToggle] = useState(false);
-
-  return (
-    <div className="infopanel">
-      <h3 className={`info-panel_title ${toggle ? 'arrow_up' : 'arrow_down'}`} onClick={() => setToggle(!toggle)}>
-        {title}
-		<img className={`arrow_icon ${toggle ? 'arrow_up' : 'arrow_down'}`} src={arrow} alt="Arrow" />
-      </h3>
-      <div className={`info-panel_content ${toggle ? '' : 'info-panel_content_hidden'}`}>
-        {Array.isArray(content) ? content.map((item, index) => (
-          <p key={index}>{item}</p>
-        )) : content}
-      </div>
-    </div>
-  );
-}
+function InfopanelLogement({ title, content }) {
+	const [toggle, setToggle] = useState(false);
+  
+	return (
+	  <div className="infopanel-logement">
+		<h3 className={`info-panel_title ${toggle ? 'arrow_up' : 'arrow_down'}`} onClick={() => setToggle(!toggle)}>
+		  {title}
+		  <img className={`arrow_icon ${toggle ? 'arrow_up' : 'arrow_down'}`} src={arrow} alt="Arrow" />
+		</h3>
+		<div className={`info-panel_content ${toggle ? '' : 'info-panel_content_hidden'}`}>
+		  {Array.isArray(content) ? content.map((item, index) => (
+			<p key={index}>{item}</p>
+		  )) : content}
+		</div>
+	  </div>
+	);
+  }
 
 export default function Fichelogement() {
   const [imageSlider, setImageSlider] = useState([]);
@@ -90,10 +90,10 @@ export default function Fichelogement() {
 				</div>
 				<div className="Logment_infopanel">
 					<div className="Logment_Infopanel_item">
-						<Infopanel title={'Description'} content={description} />
+						<InfopanelLogement title={'Description'} content={description} />
 					</div>
 					<div className="Logment_infopanel_item">
-						<Infopanel title={'Équipements'} content={equipments} />
+						<InfopanelLogement title={'Équipements'} content={equipments} />
 					</div>
 				</div>
 			</main>
