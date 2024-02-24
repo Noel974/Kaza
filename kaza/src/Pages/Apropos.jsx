@@ -12,7 +12,7 @@ function InfopanelApropos({ title, content }) {
         {title}
         <img className={`arrow_icon ${toggle ? 'arrow_up' : 'arrow_down'}`} src={arrow} alt="Arrow" />
       </h3>
-      <div className={`info-panel_content ${toggle ? '' : 'info-panel_content_hidden'}`}>
+      <div className={`info-panel_apropos_content ${toggle ? '' : 'info-panel_content_hidden'}`}>
         {Array.isArray(content) ? content.map((item, index) => (
           <p key={index}>{item}</p>
         )) : content}
@@ -49,7 +49,7 @@ function AboutPage() {
     <div>     
        <Banner backgroundImage={about}></Banner>
       <div>
-      <main className='about_main'>
+      <main className='apropos_main'>
           {aboutDatas.map(data => (
             <div key={data.id} className="about_main_info-panel">
               <InfopanelApropos title={data.title} content={data.content} />

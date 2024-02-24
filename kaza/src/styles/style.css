@@ -264,15 +264,15 @@
   margin: 0 auto;
 }
 
-.about_main {
+.apropos_main {
   width: 95%;
   margin: 0 auto;
 }
-.about_main_info-panel {
+.apropos_main_info-panel {
   margin: 40px auto;
 }
 @media screen and (max-width: 550px) {
-  .about_main_info-panel {
+  .apropos_main_info-panel {
     margin: 20px auto;
   }
 }
@@ -301,7 +301,7 @@
   transform: rotate(0deg);
 }
 
-.info-panel_content {
+.info-panel_apropos_content {
   background-color: #F7F7F7;
   border-radius: 10px;
   display: flex;
@@ -324,32 +324,11 @@
   height: 0;
 }
 
-.info-panel {
+.apropos_panel {
   max-width: 1100px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   margin: 0 auto;
-}
-
-.accomodation_info-panel {
-  display: flex;
-  justify-content: space-between;
-  gap: 70px;
-  margin: 30px auto;
-  width: 95%;
-}
-.accomodation_info-panel_item {
-  width: 50%;
-}
-@media screen and (max-width: 650px) {
-  .accomodation_info-panel {
-    flex-direction: column;
-    gap: 20px;
-    margin: 20px auto;
-  }
-  .accomodation_info-panel_item {
-    width: 100%;
-  }
 }
 
 .Logment_content {
@@ -440,10 +419,12 @@
 .Logment_content_host_stars {
   display: flex;
   gap: 10px;
+  font-size: 18px;
 }
 .Logment_content_host_stars img {
   width: 30px;
   height: 30px;
+  margin-top: 15px;
 }
 @media screen and (max-width: 650px) {
   .Logment_content_host_stars img {
@@ -452,26 +433,38 @@
   }
 }
 
+.infopanel-logement {
+  margin-bottom: 1rem;
+  flex-basis: 50%;
+  overflow: hidden;
+}
+
+.info-panel_logement_content {
+  background-color: #F7F7F7;
+  color: #FF6060;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  position: relative;
+  top: -0.3rem;
+  z-index: -1;
+  transition: transform 0.3s ease-in-out;
+}
+@media screen and (max-width: 650px) {
+  .info-panel_logement_content {
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px auto;
+  }
+}
+
 .Logment_infopanel {
   display: flex;
-  justify-content: space-between;
-  gap: 80px;
-  margin-top: 15px;
-  margin-left: 20px;
-  margin-right: 20px;
-}
-.Logment_infopanel_item {
-  width: 100%;
-  padding: 0;
+  gap: 2rem;
+  overflow: hidden;
 }
 @media screen and (max-width: 650px) {
   .Logment_infopanel {
-    flex-direction: column;
-    gap: 20px;
-    margin: 20px auto;
-  }
-  .Logment_infopanel_item {
-    width: 100%;
+    width: 20px;
   }
 }
 

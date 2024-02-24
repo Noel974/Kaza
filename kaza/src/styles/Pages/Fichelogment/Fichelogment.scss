@@ -1,20 +1,24 @@
-.Logment{
-    &_content{
+.Logment {
+    &_content {
         @include flex(row, space-between, flex-start);
         color: $color-secondary;
         width: 95%;
-        margin: 0 auto;
-        @media screen and (max-width: 650px){
-            @include flex(column, space-between, flex-start);   
-            gap: 10px;   
+        margin-bottom: 20px;
+
+        @media screen and (max-width: 650px) {
+            @include flex(column, space-between, flex-start);
+            gap: 10px;
+            margin-bottom: 20px;
         }
-        &_infos{
+
+        &_infos {
             display: flex;
             flex-direction: column;
             gap: 10px;
             font-weight: 500;
             font-size: 14px;
-            button{
+
+            button {
                 display: inline;
                 padding: 5px 15px;
                 margin-right: 10px;
@@ -23,57 +27,71 @@
                 border: none;
                 color: $color-primary;
                 background-color: $color-secondary;
-                &:hover{
+
+                &:hover {
                     box-shadow: 0 2px 8px rgb(0, 0, 0);
                 }
             }
-            div{
+
+            div {
                 display: flex;
                 flex-wrap: wrap;
-                gap: 10px;  
+                gap: 10px;
             }
         }
-        &_host{
+
+        &_host {
             display: flex;
             flex-direction: column;
             gap: 5px;
-            @media screen and (max-width: 650px){
+
+            @media screen and (max-width: 650px) {
                 width: 100%;
-                @include flex(row-reverse, space-between, center);     
+                @include flex(row-reverse, space-between, center);
             }
-            div{
+
+            div {
                 display: flex;
                 justify-content: flex-end;
                 align-items: flex-end;
                 gap: 0 10px;
-                @media screen and (max-width: 500px){
-                    gap: 0 5px;   
+
+                @media screen and (max-width: 500px) {
+                    gap: 0 5px;
                 }
             }
-            &_name{
+
+            &_name {
                 align-self: center;
                 flex-direction: column;
             }
-            img{
+
+            img {
                 width: 64px;
                 height: 64px;
                 object-fit: cover;
                 object-position: center;
                 border-radius: 50%;
-                @media screen and (max-width: 650px){
+
+                @media screen and (max-width: 650px) {
                     width: 40px;
-                        height: 40px;
+                    height: 40px;
                 }
             }
-            &_stars{
+
+            &_stars {
                 display: flex;
                 gap: 10px;
-                img{
+                font-size: 18px;
+
+                img {
                     width: 30px;
                     height: 30px;
-                    @media screen and (max-width: 650px){
+                    margin-top: 15px;
+
+                    @media screen and (max-width: 650px) {
                         width: 20px;
-                        height: 20px;  
+                        height: 20px;
                     }
                 }
             }
@@ -81,24 +99,38 @@
     }
 }
 
-.Logment_infopanel{
+.infopanel-logement {
+    margin-bottom: 1rem;
+    flex-basis: 50%;
+    overflow: hidden;
+}
+
+.info-panel_logement_content {
+    background-color: $color-tertiary;
+    color: $color-secondary;
+    padding: 1rem;
+    border-radius: 0.7rem;
+    position: relative;
+    top: -0.3rem;
+    z-index: -1;
+    transition: transform 0.3s ease-in-out;
+
+    @media screen and (max-width: 650px) {
+        margin-bottom: 0px;
+        margin-top: 0px;
+
+    }
+}
+
+.Logment_infopanel {
     display: flex;
-    justify-content: space-between;
-gap: 80px;
-margin-top: 15px;
-margin-left: 20px;
-margin-right: 20px;
-    
-    &_item{
-        width: 100%;
-        padding: 0;
-    }
-    @media screen and (max-width: 650px){
+    gap: 2rem;
+    overflow: hidden;
+
+    @media screen and (max-width: 650px) {
         flex-direction: column;
-        gap: 20px;
-        margin: 20px auto;
-        &_item{
-            width: 100%;
-        }    
+        width: 100%;
+
     }
+
 }

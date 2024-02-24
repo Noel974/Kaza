@@ -19,7 +19,7 @@ function InfopanelLogement({ title, content }) {
 		  {title}
 		  <img className={`arrow_icon ${toggle ? 'arrow_up' : 'arrow_down'}`} src={arrow} alt="Arrow" />
 		</h3>
-		<div className={`info-panel_content ${toggle ? '' : 'info-panel_content_hidden'}`}>
+		<div className={`info-panel_logement_content ${toggle ? '' : 'info-panel_content_hidden'}`}>
 		  {Array.isArray(content) ? content.map((item, index) => (
 			<p key={index}>{item}</p>
 		  )) : content}
@@ -89,12 +89,11 @@ export default function Fichelogement() {
 					</div>
 				</div>
 				<div className="Logment_infopanel">
-					<div className="Logment_Infopanel_item">
+					
 						<InfopanelLogement title={'Description'} content={description} />
-					</div>
-					<div className="Logment_infopanel_item">
+
 						<InfopanelLogement title={'Équipements'} content={equipments} />
-					</div>
+
 				</div>
 			</main>
     </>

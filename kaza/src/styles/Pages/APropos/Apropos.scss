@@ -36,7 +36,7 @@
   }
 }
 
-.info-panel_content {
+.info-panel_apropos_content {
   background-color: $color-tertiary;
   border-radius: 10px;
   display: flex;
@@ -60,8 +60,8 @@
   opacity: 0;
   height: 0;
 }
-.apropos_panel {
 
+.apropos_panel {
   max-width: 1100px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
