@@ -10,6 +10,7 @@
 
   @media screen and (max-width: 768px) {
     width: 90%; // Ajustez la largeur pour des écrans plus petits
+    margin: 20px;
   }
 }
 
@@ -24,6 +25,7 @@
 
   @media screen and (max-width: 768px) {
     font-size: 140px; // Ajustez la taille pour des écrans plus petits
+    margin: 20px;
   }
 }
 
@@ -33,13 +35,15 @@
   text-align: center;
 
   @media screen and (max-width: 768px) {
-    font-size: 1.8rem; 
+    font-size: 1.5rem; 
+    margin-bottom: 20px;
   }
 }
 
 .notFound_infos_return {
   display: block;
   text-align: center;
+  text-decoration: underline;
   font-weight: 500;
   font-size: clamp(0.8rem, 1.5vw, 1rem); 
 
