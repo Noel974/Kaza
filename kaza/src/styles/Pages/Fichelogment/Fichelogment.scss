@@ -99,38 +99,21 @@
     }
 }
 
-.infopanel-logement {
-    margin-bottom: 1rem;
-    flex-basis: 50%;
-    overflow: hidden;
-}
-
-.info-panel_logement_content {
-    background-color: $color-tertiary;
-    color: $color-secondary;
-    padding: 1rem;
-    border-radius: 0.7rem;
-    position: relative;
-    top: -0.3rem;
-    z-index: -1;
-    transition: transform 0.3s ease-in-out;
-
-    @media screen and (max-width: 650px) {
-        margin-bottom: 0px;
-        margin-top: 0px;
-
-    }
-}
-
 .Logment_infopanel {
     display: flex;
-    gap: 2rem;
-    overflow: hidden;
-
-    @media screen and (max-width: 650px) {
-        flex-direction: column;
-        width: 100%;
-
-    }
-
+    justify-content: space-between;
 }
+.detail_info{
+    width: 48%;
+    margin-top: 1.5rem;
+}
+@media screen and (max-width: 320px) {
+    .Logment_infopanel {
+      display: block;
+      width: 100%;
+      margin-top: 2rem;
+    }
+    .detail_info {
+      width: 100%;
+    }
+  }
