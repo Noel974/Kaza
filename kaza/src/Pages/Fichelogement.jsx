@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Carrousel from '../Components/Carrousel/Carrousel';
-import Infopanel from '../Components/collapse/Infopanel';
+import Infologement from '../Components/LogementContenu/Infologement';
+
+import Infopanel from '../Components/Collapse/Infopanel';
 import E404 from '../Pages/404';
 import datas from '../assets/data/data.json';
-import redStar from '../assets/logo/red_star.png';
-import greyStar from '../assets/logo/grey_star.png';
+
 
 export default function Fichelogement() {
     const [imageSlider, setImageSlider] = useState([]);
@@ -35,30 +36,14 @@ export default function Fichelogement() {
         <>
             <Carrousel imageSlider={imageSlider} />
             <main className="Logment">
-                <section className="Logment_content">
-                    <div className="Logment_content_infos">
-                        <h1>{dataCurrentLogment[0].title}</h1>
-                        <p>{dataCurrentLogment[0].location}</p>
-                        <div>
-                            {dataCurrentLogment[0].tags.map((tag, index) => (
-                                <button key={index}>{tag}</button>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="Logment_content_host">
-                        <div>
-                            <div className='Logment_content_host_name'>
-                                <span>{dataCurrentLogment[0].host.name.split(' ')[0]}</span>
-                                <span>{dataCurrentLogment[0].host.name.split(' ')[1]}</span>
-                            </div>
-                            <img src={dataCurrentLogment[0].host.picture} alt="host of this Logment" />
-                        </div>
-                        <div className="Logment_content_host_stars">
-                            {[...Array(5)].map((star, index) => (
-                                <img key={index} src={index < dataCurrentLogment[0].rating ? redStar : greyStar} alt="star" />
-                            ))}
-                        </div>
-                    </div>
+                <section className="Infologment">
+                <Infologement 
+                        title={dataCurrentLogment[0].title} 
+                        location={dataCurrentLogment[0].location} 
+                        tags={dataCurrentLogment[0].tags} 
+                        host={dataCurrentLogment[0].host} 
+                        rating={dataCurrentLogment[0].rating} 
+                    />
                 </section>
                 <section className="Logment_infopanel">
                     <div className='detail_info'>

@@ -1,0 +1,11 @@
+.Titelogement {
+    @include flex(row, space-between, flex-start);
+    color: $color-secondary;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 650px) {
+        @include flex(column, space-between, flex-start);
+        gap: 10px;
+        margin-bottom: 20px;
+    }}

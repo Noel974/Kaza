@@ -3,7 +3,7 @@ import about from '../assets/media/about.png';
 import  Infopropos  from '../assets/data/Infopropos.json';
 
 import Banner from '../Components/Banner/Banner';
-import Infopanel from '../Components/collapse/Infopanel';
+import Infopanel from '../Components/Collapse/Infopanel';
 
 function AboutPage() {
   return (

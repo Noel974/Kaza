@@ -6,9 +6,8 @@ import Card from '../Components/Card/Card'
 function Home() {
     return (
         <div className='home'>
-            <Banner backgroundImage={home}/>
-                <p>Chez vous, partout et ailleurs</p>
-                <Card />
+            <Banner backgroundImage={home} texte="Chez vous, partout et ailleurs" />
+            <Card />
         </div>
     )
 
