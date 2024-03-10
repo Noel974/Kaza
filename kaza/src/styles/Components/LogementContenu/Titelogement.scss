@@ -1,11 +1,18 @@
-.Titelogement {
-    @include flex(row, space-between, flex-start);
-    color: $color-secondary;
+@import "../../Base/_Variable.scss";
+@import "../../Base/_mixinis.scss";
+
+.Logment_content_infos {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
 
-    @media screen and (max-width: 650px) {
-        @include flex(column, space-between, flex-start);
+
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
         gap: 10px;
-        margin-bottom: 20px;
-    }}
+    }
+}

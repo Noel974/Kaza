@@ -1,3 +1,4 @@
+// COmponens
 @import "./Components/Banner/banner.scss";
 @import "./Components/Footer/Footer.scss";
 @import "./Components/Cards/Cards.scss";
@@ -6,8 +7,9 @@
 @import "./Components/LogementContenu/HostLogement.scss";
 @import "./Components/LogementContenu/TagsLogement.scss";
 @import"./Components/LogementContenu/Titelogement.scss";
+@import "./Components/LogementContenu/Stars.scss";
 @import "./Components/Collapse/Collapse.scss";
-
+// Pages
 @import "./Pages/Home/Home.scss";
 @import "./Pages/Apropos/Apropos.scss";
 @import "./Pages/FicheLogment/FicheLogment.scss";

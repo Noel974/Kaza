@@ -1,8 +1,19 @@
+.infologment {
+    @include flex(row, space-between, flex-start);
+    color: $color-secondary;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 650px) {
+        @include flex(column, space-between, flex-start);
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+}
 
 
 .Logment_infopanel {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .detail_info {

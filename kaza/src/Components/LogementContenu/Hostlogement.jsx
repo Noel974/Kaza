@@ -1,6 +1,5 @@
 import React from 'react';
-import redStar from '../../assets/logo/red_star.png';
-import greyStar from '../../assets/logo/grey_star.png';
+import Stars from "./Stars";
 
 export default function Hostlogement({ host, rating }) {
     return (
@@ -13,9 +12,7 @@ export default function Hostlogement({ host, rating }) {
                 <img className='host_img' src={host.picture} alt="host of this Logment" />
             </div>
             <div className="Logment_content_host_stars">
-                {[...Array(5)].map((_, index) => (
-                    <img key={index} src={index < rating ? redStar : greyStar} alt="star" />
-                ))}
+                <Stars rating={rating}/>
             </div>
         </div>
     );

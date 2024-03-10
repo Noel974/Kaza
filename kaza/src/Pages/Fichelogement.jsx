@@ -36,7 +36,7 @@ export default function Fichelogement() {
         <>
             <Carrousel imageSlider={imageSlider} />
             <main className="Logment">
-                <section className="Infologment">
+                <div className="infologment">
                 <Infologement 
                         title={dataCurrentLogment[0].title} 
                         location={dataCurrentLogment[0].location} 
@@ -44,8 +44,8 @@ export default function Fichelogement() {
                         host={dataCurrentLogment[0].host} 
                         rating={dataCurrentLogment[0].rating} 
                     />
-                </section>
-                <section className="Logment_infopanel">
+                </div>
+                <div className="Logment_infopanel">
                     <div className='detail_info'>
                         {/* Passer la description en tant que prop 'contenu' */}
                         <Infopanel title={'Description'} content={description} />
@@ -54,7 +54,7 @@ export default function Fichelogement() {
                         {/* Passer les équipements en tant que prop 'contenu' */}
                         <Infopanel title={'Équipements'} content={equipments} className="equipments" />
                     </div>
-                </section>
+                </div>
             </main>
         </>
     );

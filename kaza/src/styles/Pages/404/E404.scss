@@ -3,20 +3,20 @@
 
 .page_404 {
   margin: auto;
-  width: 80%; // Ajustez la largeur pour un meilleur rendu sur des écrans plus petits
-  max-width: 600px; // Ajoutez une largeur maximale pour éviter des étirements excessifs
-  padding: 30px; // Réduisez la marge intérieure pour un meilleur ajustement
+  width: 80%; 
+  max-width: 600px; 
+  padding: 30px; 
   color: $color-secondary;
 
   @media screen and (max-width: 768px) {
-    width: 90%; // Ajustez la largeur pour des écrans plus petits
+    width: 90%; 
     margin: 20px;
   }
 }
 
 .notFound_info {
   @include flex(column, center, center);
-  min-height: calc(100vh - 100px); // Ajustez la hauteur minimale
+  min-height: calc(100vh - 100px); 
 }
 
 .notFound_infos_title {
@@ -24,14 +24,14 @@
   font-size: 288px; 
 
   @media screen and (max-width: 768px) {
-    font-size: 140px; // Ajustez la taille pour des écrans plus petits
+    font-size: 140px; 
     margin: 20px;
   }
 }
 
 .notFound_infos_content {
   font-weight: 500;
-  font-size: clamp(1.5rem, 3vw, 2.5rem); // Utilisez clamp() pour une meilleure responsivité
+  font-size: clamp(1.5rem, 3vw, 2.5rem); 
   text-align: center;
 
   @media screen and (max-width: 768px) {
