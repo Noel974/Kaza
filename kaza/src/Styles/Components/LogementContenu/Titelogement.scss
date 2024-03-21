@@ -1,0 +1,18 @@
+@import "../../Base/_Variable.scss";
+@import "../../Base/_mixinis.scss";
+
+.Logment_content_infos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 14px;
+
+
+
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+}
