@@ -1,0 +1,15 @@
+.stars {
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+}
+.starratind {
+        width: 10px;
+        height: 10px;
+        margin-top: 15px;
+
+        @media screen and (max-width: 650px) {
+            width: 20px;
+            height: 20px;
+        }
+    }
